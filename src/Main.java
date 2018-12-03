@@ -10,8 +10,9 @@ public class Main {
     }
 
     static void firstTask(){
-        PrintThread t1 = new PrintThread("+");
-        PrintThread t2 = new PrintThread("-");
+        OutputClass sharedRes = new OutputClass("|");
+        PrintThread t1 = new PrintThread("|" , sharedRes);
+        PrintThread t2 = new PrintThread("-" , sharedRes);
         t1.start();
         t2.start();
 

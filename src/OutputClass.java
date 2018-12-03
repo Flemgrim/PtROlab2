@@ -1,5 +1,7 @@
 public class OutputClass {
-    synchronized static void writeSymbol(String symbol){
-        System.out.print(symbol);
-    }
+    String currentSymbol;
+    //synchronized static void writeSymbol(String symbol){
+      //  System.out.print(symbol);
+    //}
+    public OutputClass (String currentSymbol){ this.currentSymbol = currentSymbol;}
 }
