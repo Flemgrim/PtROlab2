@@ -1,12 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        firstTask();
+        //firstTask();
         secondTask();
-        //for(int i = 0; i < 10; i++) {
-          //  for(int j = 0; j < 6; j++) {
-            //    thirdTask(i + 1, 500 + j * 100);
-           // }
-       // }
     }
 
     static void firstTask(){
@@ -19,6 +14,15 @@ public class Main {
 
     }
     static void secondTask(){
+        Counter count = new Counter();
+
+        CounterThread increm = new CounterThread(count, 1);
+        CounterThread decrem = new CounterThread(count, -1);
+
+        increm.start();
+        decrem.start();
+
+        System.out.print("\n" + count.counter);
 
     }
     static void thirdTask(){
