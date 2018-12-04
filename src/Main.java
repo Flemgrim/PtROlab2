@@ -25,7 +25,9 @@ public class Main {
         System.out.print("\n" + count.counter);
 
     }
-    static void thirdTask(){
+    static void thirdTask(int size){
+        Matrix m1 = new Matrix(size);
+        Matrix m2 = new Matrix(size);
 
     }
     static void fourthTask(){
